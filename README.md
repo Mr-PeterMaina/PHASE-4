@@ -22,6 +22,7 @@ We have 2 main recommendation system models:
 * Over the past years, there has been rise in huge ecommerce and online services leading clients facing difficulty when searching for the right products.
 * Clients looking to purchase books also face the same struggle when trying to match the right books with their taste and preferences.
 * **The Business Problem** is to develop a recommendation system that recommends books that are tailored to our users preferences inorder to improve customer experience and engagement.
+
 > PROJECT OBJECTIVE
 1. To build a book recommendation system that provides personalized suggestions to our users.
 2. Improve sales by showcasing books a user is most likely to buy.
@@ -111,19 +112,26 @@ In our evaluation we focused majorly on **precision score,recall score,f1 score,
   * Collaborative filtering using **Singular Value Decomposition** {SVD} can effectively predict book ratings for users based on  their historical preferences and those of similar users.
 2. Model performance evaluation
   * The model has a resonable predictive **accuracy score** since **RMSE**= **3.4219** and **MAE** = **2.7470**
-  * However the model has a low **recall score** of **0.0817**, this indicates most relevant books are not captured by the model.Thus it requires further attention to enhance the model quality.
+  * The model met our goal of having a precision score of 75 % as it had a **Precision of 79%** measures the proportion of relevant recommendations that were actually correct i.e how many of the recommended books were truly relevant.
+  * However the model has a low **recall score** of **0.0814**, this indicates most relevant books are not captured by the model.Thus it requires further attention to enhance the model quality.
 3. User - Item based collaborative filtering
   * **User-User method** effectively identifies similar users and their preferences.
   * **Item based** **approach** using SVD provided personalized recommendations based on predicted rating for unseen books.
   * Our analysis shows that the same user has different recommendations based on the two different approaches.
 4. Item - based approach 
   * Based on this approach it is evident that highly rated books are preferred by most users.
+  
 > ## Recommendations
 1. Enhanced personalization and feedback mechanism.
 2. Utilize data for targeted marketing.
 3. Business should feature highly rated books.
 4. Use top rated labels to highlight highly rated books in marketing campaigns.
-   
+
+> ## FURTHER STUDIES
+
+1. Explore Alternative Algorithms: Investigate the performance of other recommendation algorithms, such as neural collaborative filtering or hybrid approaches, to compare their effectiveness against the current SVD model.
+
+2. Content-Based Recommendations: Explore the potential for a content-based recommendation system that utilizes book attributes, such as author, to complement collaborative filtering methods and provide more holistic recommendations.
 
 
   
