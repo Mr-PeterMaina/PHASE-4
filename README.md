@@ -10,7 +10,7 @@
 | 4. | LILIAN MULI | https://github.com/mwikali24 |
 | 5. | PETER MAINA | https://github.com/Mr-PeterMaina |
 
-## Business Understanding
+> ## Business Understanding
 * **Recommendation systems** are powerful tools that use machine learning algorithms to provide relevant suggestions to users based on behaviour patterns or user data.
 * **A Book Recommendation System** is a recommendation system where we recommend similar books to readers based on their interests.
 Recommendation systems help drive engagement, increase sales, increases revenue and this in return brings in loyal clients as the customer experience is elevated promoting customer satisfaction.
@@ -90,3 +90,43 @@ The analysis aims to achieve these objectives by considering the following analy
     5. Evaluation
     6. Deployment
 
+> ## Explanatory Data Analysis
+1. Univariate data analysis
+
+ ![Top 10 frequent authors](<Images/Top10 frequent authors.png>)
+ ![Top 10 frequent publishers](<Images/Top 10 Frequent Publishers.png>)
+
+2. Bivariate analysis
+
+![Book authors vs average book rating](<Images/Top authors by average book rating.png>)
+![Publishers vs average book rating](<Images/Top publishers by average book rating.png>)
+![Age vs publisher preference](<Images/Publisher preference by different age groups.png>)
+
+> ## Modelling
+In our analysis we used **collaborative filtering** to build a recommendation system.  
+In our evaluation we focused majorly on **precision score,recall score,f1 score,accuracy score**
+
+> ## Conclusion
+1. Effectiveness of collaborative filtering  
+  * Collaborative filtering using **Singular Value Decomposition** {SVD} can effectively predict book ratings for users based on  their historical preferences and those of similar users.
+2. Model performance evaluation
+  * The model has a resonable predictive **accuracy score** since **RMSE**= **3.4219** and **MAE** = **2.7470**
+  * However the model has a low **recall score** of **0.0817**, this indicates most relevant books are not captured by the model.Thus it requires further attention to enhance the model quality.
+3. User - Item based collaborative filtering
+  * **User-User method** effectively identifies similar users and their preferences.
+  * **Item based** **approach** using SVD provided personalized recommendations based on predicted rating for unseen books.
+  * Our analysis shows that the same user has different recommendations based on the two different approaches.
+4. Item - based approach 
+  * Based on this approach it is evident that highly rated books are preferred by most users.
+> ## Recommendations
+1. Enhanced personalization and feedback mechanism.
+2. Utilize data for targeted marketing.
+3. Business should feature highly rated books.
+4. Use top rated labels to highlight highly rated books in marketing campaigns.
+   
+
+
+  
+
+ 
+ 
