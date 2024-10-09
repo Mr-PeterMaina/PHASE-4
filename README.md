@@ -112,7 +112,7 @@ In our evaluation we focused majorly on **precision score,recall score,f1 score,
   * Collaborative filtering using **Singular Value Decomposition** {SVD} can effectively predict book ratings for users based on  their historical preferences and those of similar users.
 2. Model performance evaluation
   * The model has a resonable predictive **accuracy score** since **RMSE**= **3.4219** and **MAE** = **2.7470**
-  * The model met our goal of having a precision score of 75 % as it had a **Precision of 79%** measures the proportion of relevant recommendations that were actually correct i.e how many of the recommended books were truly relevant.
+  * The model met our goal of having a precision score of atleast 75 % as it had a **Precision of 79%** measures the proportion of relevant recommendations that were actually correct i.e how many of the recommended books were truly relevant.
   * However the model has a low **recall score** of **0.0814**, this indicates most relevant books are not captured by the model.Thus it requires further attention to enhance the model quality.
 3. User - Item based collaborative filtering
   * **User-User method** effectively identifies similar users and their preferences.
